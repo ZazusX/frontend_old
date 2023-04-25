@@ -15,7 +15,7 @@ export default {
     };
   },
   mounted() {
-    fetch('http://localhost:1337/api/contents')
+    fetch('http://localhost:3033/api/contents')
       .then((res) => res.json())
       .then((data) => {
         this.contents = data.data;
